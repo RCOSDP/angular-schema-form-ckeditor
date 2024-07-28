@@ -1,0 +1,42 @@
+{
+  "name": "angular-schema-form-ckeditor",
+  "version": "0.0.1",
+  "description": "CK Editor add-on for schema form",
+  "scripts": {
+    "test": "rm -fr coverage && ./node_modules/karma/bin/karma start --single-run --browsers PhantomJS karma.conf.js"
+  },
+  "author": {
+    "name": "Webcanvas for Textalk"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.9.0",
+    "coveralls": "^2.11.0",
+    "gulp": "^3.5.6",
+    "gulp-angular-templatecache": "^1.2.1",
+    "gulp-concat": "^2.2.0",
+    "gulp-jscs": "^1.1.0",
+    "gulp-minify-html": "^0.1.1",
+    "gulp-plumber": "^0.6.5",
+    "gulp-uglify": "^0.2.1",
+    "karma": "^0.12.0",
+    "karma-chai-sinon": "^0.1.3",
+    "karma-coverage": "^0.2.1",
+    "karma-growler-reporter": "0.0.1",
+    "karma-mocha": "^0.1.3",
+    "karma-ng-html2js-preprocessor": "^0.1.0",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "mocha": "^1.18.0",
+    "mocha-lcov-reporter": "0.0.1",
+    "sinon": "^1.9.0",
+    "sinon-chai": "^2.5.0",
+    "streamqueue": "0.0.5"
+  },
+  "gitHead": "b213fa934759a18b1436e23bfcbd9f0f730f1296",
+  "readme": "Angular Schema Form CK Editor Add-on\n======================================\n\nThis is an add-on for [Angular Schema Form](https://github.com/Textalk/angular-schema-form/).\n\n[![Build Status](https://travis-ci.org/webcanvas/angular-schema-form-ckeditor.svg?branch=master)](https://travis-ci.org/webcanvas/angular-schema-form-ckeditor)\n[![Bower version](https://badge.fury.io/bo/angular-schema-form-ckeditor.svg)](http://badge.fury.io/bo/angular-schema-form-ckeditor)\n\n\nAn awesome addition to Schema Form - now you can allow non devs to create bad html!. \nThis add-on uses the CKEditor and an angular adapter to get it working,\n[ckeditor](http://ckeditor.com/).\n[ng-ckeditor](https://github.com/esvit/ng-ckeditor).\n\n\nInstallation\n------------\nThe ckeditor is an add-on to the Bootstrap decorator. To use it, just include\n`bootstrap-ckeditor.min.js` *after* `bootstrap-decorator.min.js`.\n\nYou'll need to load a few additional files to use ckeditor:\n\n1. CKEditor\n2. ng-ckeditor\n\nEasiest way is to install is with bower, this will also include dependencies:\n```bash\n$ bower install angular-schema-form-ckeditor\n```\n\nUsage\n-----\nThe ckeditor add-on adds a new form type, `ckeditor`, and a new default mapping.\n\n|  Form Type     |  Becomes        |\n|:--------------:|:---------------:|\n|  ckeditor      |  WYSIWYG widget |\n\n\n|  Schema                                     |  Default Form type  |\n|:-------------------------------------------:|:-------------------:|\n| \"type\": \"string\" and \"format\": \"ckeditor\"   |   ckeditor          |\n\n\nForm Type Options\n-----------------\nThe `ckeditor` form type takes an optional 'ckeditor' object. This object represents the configuration options for the editor\n\nHere's an example:\n\n```javascript\n{\n  key: \"thehtmlwysiwyg\",\n  ckeditor: {\n    skin: 'Moono'\n  }\n}\n```\n",
+  "readmeFilename": "README.md",
+  "_id": "angular-schema-form-ckeditor@0.0.1",
+  "_shasum": "7a5677fae2bed83d1826c077f2326d2f15af5578",
+  "_from": "git+https://github.com/webcanvas/angular-schema-form-ckeditor.git#b213fa934759a18b1436e23bfcbd9f0f730f1296",
+  "_resolved": "git+https://github.com/webcanvas/angular-schema-form-ckeditor.git#b213fa934759a18b1436e23bfcbd9f0f730f1296"
+}
